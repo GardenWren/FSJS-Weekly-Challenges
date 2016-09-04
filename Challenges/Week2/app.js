@@ -1,5 +1,20 @@
 //create function
   //control and return statements
+  
+function HelloWorld(){
+    var hello;
+    while(true === true){
+      hello = prompt('Enter Greeting!');
+      if (hello === 'Hello') {
+         alert('Hello World!');
+         return;
+      }else{
+      	alert('Incorrect Greeting');
+      }
+    }
+  }
+ 
+ HelloWorld();
 
 function HelloWorld(){
   var hello
