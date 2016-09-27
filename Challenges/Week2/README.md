@@ -1,4 +1,8 @@
+<<<<<<< ebb4f12df1636bf7bc38398a12c8d329978bcdd6
 Try and do all of the following:
+=======
+    Try and do all of the following.  Don't worry if you can't complete everything or have difficulty getting started.  We'll walk through this in class next week!
+>>>>>>> test
 
 Prompt the user for input and store that into a variable
 Pass that value into a function

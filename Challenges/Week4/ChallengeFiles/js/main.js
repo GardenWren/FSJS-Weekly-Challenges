@@ -7,13 +7,19 @@ function openBlock (id) {
     }
     block.style.display = "block";
     
+
     // TODO: remove the "active" class from all of the li elements inside the menu
+    $('#menu li').removeClass("active");
     // TODO: add the "active" class to the li element that contains the link that was clicked
+    
 
 }
 
 // TODO: add the "hover" class to the menu items when you hover over them
-
+$('#menu li').hover(function(){
+	$(this).toggleClass("hover");
+	 });
 
 // TODO: set up the tooltip plugin on all of the links in the menu
+  $('#menu li').tooltip();
 
