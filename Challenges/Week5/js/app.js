@@ -19,21 +19,33 @@ function getPokemon(listIndexStart,listIndexEnd){
 
 var listIndexStart = 0;
 var listIndexEnd = 20;
+var apiEnd;
+    $.getJSON("http://pokeapi.co/api/v2/pokemon/{endpoint}", function(data){
+ 	  apiEnd = data.content;
+ 	  });
 
 getPokemon(listIndexStart,listIndexEnd); //get first 20 pokemon
 
 $('#previous').click(function(){
+	if(listIndexStart < 1){
+		$(this).addClass("disabled");
+	}else{
 	console.log('previous');
 	listIndexStart -= 20;
 	listIndexEnd -= 20;
 	getPokemon(listIndexStart,listIndexEnd);
+	}
 });
 
 $('#next').click(function(){
+	if(listIndexEnd >= apiEnd){
+		$(this).addClass("disabled");
+	}else{
 	console.log('next');
 	listIndexStart += 20;
 	listIndexEnd += 20;
 	getPokemon(listIndexStart,listIndexEnd);
+	}
 });
 
 
