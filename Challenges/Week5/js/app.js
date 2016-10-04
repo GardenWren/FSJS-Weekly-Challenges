@@ -7,6 +7,7 @@ function addPokemon(name) {
 };
 
 function getPokemon(listIndexStart,listIndexEnd){
+	$('#pokemon').html("");
   for (var i = listIndexStart; i < listIndexEnd; i++){
     var urlPokeAPI = 'http://pokeapi.co/api/v2/pokemon/'+ i;
     $.getJSON(urlPokeAPI, function(data){
@@ -21,14 +22,14 @@ var listIndexEnd = 20;
 
 getPokemon(listIndexStart,listIndexEnd); //get first 20 pokemon
 
-$('button #previous').click(function(){
+$('#previous').click(function(){
 	console.log('previous');
 	listIndexStart -= 20;
 	listIndexEnd -= 20;
 	getPokemon(listIndexStart,listIndexEnd);
 });
 
-$('button #next ').click(function(){
+$('#next').click(function(){
 	console.log('next');
 	listIndexStart += 20;
 	listIndexEnd += 20;
