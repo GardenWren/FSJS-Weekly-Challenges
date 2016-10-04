@@ -1,7 +1,13 @@
 //#Week 6 JQuery Code Challenge
 
 //Objects
-		
+var Box ={
+	height: 1,
+	width: 1,
+	volume: 1,
+};
+
+
 //Code Challenge:
 //Create an object named "Box" with 3 properties, height, width, volume.
 //Create 2 buttons for Height. The first button decreases the Box Height by 1. The second button increases the Box Height by 1.
