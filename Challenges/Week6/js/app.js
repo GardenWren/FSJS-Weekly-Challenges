@@ -7,6 +7,36 @@ var Box ={
 	volume: 1,
 };
 
+$('#HeightDecrease').click(function(){
+	Box.height-=1;
+});
+
+$('#HeightIncrease').click(function(){
+	Box.height+=1;
+});
+
+
+$('#WeightDecrease').click(function(){
+	Box.width-=1;
+});
+
+$('#WeightIncrease').click(function(){
+	Box.width+=1;
+});
+
+$('#VolumeDecrease').click(function(){
+	Box.volume-=1;
+});
+
+$('#VolumeIncrease').click(function(){
+	Box.volume-=1;
+});
+
+
+$('#Print').click(function(){
+  $("#output").html('object:box ,height:'+Box.height+', width:'+ Box.width+', volume:'+Box.volume);
+})
+
 
 //Code Challenge:
 //Create an object named "Box" with 3 properties, height, width, volume.
