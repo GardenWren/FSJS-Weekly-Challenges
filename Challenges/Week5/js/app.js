@@ -28,7 +28,7 @@ getPokemon(listIndexStart,listIndexEnd); //get first 20 pokemon
 
 $('#previous').click(function(){
 	if(listIndexStart < 1){
-		$(this).addClass("disabled");
+		$(this).addClass("disable");
 	}else{
 	console.log('previous');
 	listIndexStart -= 20;
@@ -39,7 +39,7 @@ $('#previous').click(function(){
 
 $('#next').click(function(){
 	if(listIndexEnd >= apiEnd){
-		$(this).addClass("disabled");
+		$(this).addClass("disable");
 	}else{
 	console.log('next');
 	listIndexStart += 20;
